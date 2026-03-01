@@ -1,5 +1,5 @@
 file1
 
-00 first line
+02 change in first line
 00 second line
-00 third line
+02 change in third line
