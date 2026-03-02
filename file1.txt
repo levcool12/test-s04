@@ -4,5 +4,5 @@ file1
 00 second line
 02 change in third line
 01 new third line
-03 add smth new
+03 add smth new 06 to stash 02
 03 again new
