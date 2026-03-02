@@ -3,3 +3,4 @@ file2
 01 one
 01 two 
 01 three
+03 will not be staged
