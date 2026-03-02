@@ -6,3 +6,4 @@ file1
 01 new third line
 03 add smth new
 03 again new
+d01 new changes on dev branch
