@@ -3,3 +3,5 @@ file3
 02 first line file3
 02 second line file3
 02 third line file3
+04 fourth line file3
+04 fifth line file3
