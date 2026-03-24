@@ -1,0 +1,17 @@
+name: List TXT files
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show all .txt files
+        run: |
+          echo "=== Список txt-файлов в ветке ${GITHUB_REF_NAME} ==="
+          ls -la *.txt || echo "Нет txt-файлов"

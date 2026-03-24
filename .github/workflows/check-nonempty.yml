@@ -1,0 +1,20 @@
+name: Check non-empty
+
+on:
+  push:
+    branches: [ main, dev ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Проверка пустых файлов
+        run: |
+          for file in *.txt; do
+            if [ ! -s "$file" ]; then
+              echo "❌ Ошибка в ветке ${GITHUB_REF_NAME}: файл $file пуст!"
+              exit 1
+            fi
+          done
+          echo "✅ В ветке ${GITHUB_REF_NAME} все txt-файлы непустые."
